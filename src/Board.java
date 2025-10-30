@@ -10,8 +10,8 @@ public class Board {
     Scanner sc;
 
 
-    Board(Hardness level) {
-        configureLevel(level);
+    Board(Hardness hardness) {
+        configureLevel(hardness);
         userBoard = new char[boardSize][boardSize];
         pb = new PrintBoard(boardSize);
         sc = new Scanner(System.in);

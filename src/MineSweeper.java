@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class MineSweeper {
-    private static Hardness level = Hardness.EASY;
+    private static Hardness hardness = Hardness.EASY;
     private static Scanner scanner = new Scanner(System.in);
 
     public static void play() {
         int x, y;
-        Board board = new Board(level);
+        Board board = new Board(hardness);
         board.intro();
 
         System.out.print("enter your first move (x, y): ");
